@@ -2,12 +2,12 @@
 var calculator = function(userInput2) {
 var arrayAlpha = [];
 for (var index= 1; index <= userInput2; index +=1) {
-  if (index % 3 === 0) {
-    arrayAlpha.push("Ping")
+  if (index % 15 === 0) {
+    arrayAlpha.push("Ping-pong")
   } else if (index % 5 === 0) {
     arrayAlpha.push("Pong")
-  } else if (index % 15 === 0) {
-    arrayAlpha.push("Ping-Pong")
+  } else if (index % 3 === 0) {
+    arrayAlpha.push("Ping")
   } else {
     arrayAlpha.push(index);
   }
