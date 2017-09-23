@@ -19,10 +19,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput= parseInt($("input#number").val());
     var arrayBeta = calculator(userInput);
-    // $("#output ul").text(results)
+      $("#output ul").empty();
     arrayBeta.forEach(function(beta) {
       $("#output ul").append("<li>" + beta + "</li>");
-
     });
   });
 });
